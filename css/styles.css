@@ -44,8 +44,15 @@ img {
 .title {
   font-size: 2.5rem;
   color: #003366;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 10px;
 }
 
 .descr {
@@ -277,10 +284,25 @@ img {
   margin-bottom: 30px;
 }
 
-/* Form styling */
+.contact-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
 .contact-form {
   max-width: 500px;
-  margin: 0 auto;
+  width: 100%;
   background: white;
   padding: 30px;
   border-radius: 10px;
@@ -314,7 +336,6 @@ input:focus {
   box-shadow: 0 0 5px rgba(0, 85, 165, 0.2);
 }
 
-/* Submit button */
 .contact-form .btn {
   width: 100%;
   padding: 12px;
@@ -331,6 +352,75 @@ input:focus {
 .contact-form .btn:hover {
   background-color: #0055a5;
   transform: scale(1.05);
+}
+
+.contact-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Services */
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+  flex-grow: 1;
+}
+
+.service-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px auto;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
 }
 
 .iti {
@@ -404,6 +494,14 @@ input:focus {
 
 .terms-privacy {
   padding-top: 100px;
+}
+
+.terms-privacy .container {
+  max-width: 1000px;
+}
+
+.terms-privacy .descr {
+  text-align: justify;
 }
 
 /* Thank You Page */
@@ -492,4 +590,49 @@ input:focus {
 
 .cookie-btn:hover {
   background-color: #003366;
+}
+
+/* Testimonials */
+
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonial-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.client-position {
+  font-size: 14px;
+  color: #888;
+}
+
+div.faq-container {
+  max-width: 1000px;
 }

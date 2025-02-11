@@ -1,4 +1,5 @@
 const phoneInput = document.querySelector("#phone");
+const faqTitles = document.querySelectorAll(".faq-title");
 
 intlTelInput(phoneInput, {
   initialCountry: "auto",
@@ -36,3 +37,15 @@ document.getElementById("accept-cookie").addEventListener("click", function () {
 if (document.cookie.indexOf("cookieAccepted=true") !== -1) {
   document.getElementById("cookie-popup").style.display = "none";
 }
+
+faqTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    const content = title.nextElementSibling;
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
